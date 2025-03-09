@@ -1,0 +1,310 @@
+{"output": "Version 1.1.3.0 is a full refresh of Jazz for Service Management Version 1.1 Base with Modification 3."}
+{"output": ""}
+{"output": "Install the missing libraries \"adwaita-gtk2-theme\" (32 and 64 bit) and \"adwaita-gtk3-theme\" 64 bit. Please contact RedHat to obtain the missing libraries."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "A new version of the Netcool/OMNIbus Socket Gateway will be available to download from August 6, 2015."}
+{"output": "HSM-enabled DataPower appliances support the export of private keys using the crypto-export command."}
+{"output": ""}
+{"output": "At this point there is no way to salvage the database in its current state. The entire Portal database must be dropped and recreated using the specifications provided in the InfoCenter at this link: \n\n\nhttp://publib.boulder.ibm.com/infocenter/wpdoc/v6r1m0/topic/com.ibm.wp.e [http://publib.boulder.ibm.com/infocenter/wpdoc/v6r1m0/index.jsp?topic=/com.ibm.wp.ent.doc/config/aix_oracle_create_db.html]"}
+{"output": "Sometimes the core dump is much larger than the default heap size can manage, and the recommendation is to increase the heap size using the -J-Xmx option."}
+{"output": "This ARG_MAX kernel parameter adjusted to much larger from kernel release version 2.6.23, that is 2621440 (http://www.in-ulm.de/~mascheck/various/argmax [http://www.in-ulm.de/~mascheck/various/argmax]). \n\nBut we support upto Redhat 5.11 in Twinfin which is less than kernel release 2.6.23. So we have no way to allow ARG_MAX larger than 131072 at this time."}
+{"output": "As with any software product, even if you do not have any issues with running your current configuration, you should apply the latest modification or fix pack to take advantage of these benefits: \n\n * Anticipate and avoid the risk of encountering defects already fixed. \n * Apply the latest product improvements that are available (performance, for example). \n * Maintain a serviceable system and be able to install an interim fix when required."}
+{"output": ""}
+{"output": ""}
+{"output": "First remember to pack all your XOMs (eXecutable Object Model) into the ssp.war following the documentation [http://publib.boulder.ibm.com/infocenter/brjrules/v7r1/topic/com.ibm.websphere.ilog.jrules.doc/Content/Business_Rules/Documentation/_pubskel/JRules/ps_JRules_Global720.html]. \n\nThen make sure the SSP (ssp.war) is deployed on each server along with a XU connection factory and the appropriate datasource definition. \n\n \n\nThen create your own SSP resolver, add it to the teamserver.war and set the teamserver.defaultSSPResolver.class property to this class following this specification [http://publib.boulder.ibm.com/infocenter/brjrules/v7r1/index.jsp?topic=/com.ibm.websphere.ilog.jrules.doc/html/api/html/ilog/rules/teamserver/model/testing/IlrSSPResolver.html]. \n\n \n\nBy implementing your own method IlrSSPResolver.getSSPURL(String serverName,URL url), you will be able to point to something else than the default provider. \n\nThe default provider uses the url of the Rule Execution Server passed in parameter and replaces the application name with testing. \n\nA simple implementation can use the server name to return a specific server URL."}
+{"output": ""}
+{"output": ""}
+{"output": "The \u201cFREAK: Factoring Attack on RSA-EXPORT keys\" TLS/SSL client and server vulnerability affects IBM\u00ae Runtime Environment Java\u2122 Technology Edition 6SR16 (and earlier) used by WebSphere Message Broker and the IBM\u00ae Runtime Environment Java\u2122 Technology Edition 7SR8 (and earlier) or 7R1 (and earlier) used by IBM Integration Bus."}
+{"output": ""}
+{"output": "In a WS Proxy, you can refresh WSDL from an URL using WSDL Cache policy. However, if the WSDL is hosted on the DataPower appliance, such as in local:///, rather than on an external URL, the WSDL Cache Policy does not apply. \n\nFor instance, changes made to local:///test.wsdl are not picked up by WS Proxy although there is a WSDL Cache policy setting the URL Match expression to local:///test.wsdl. \n\nThis issue was reported to Quality Engineering but it was determined that the DataPower device is working as designed. The device will not poll WSDL files on the local store.\n\nThe WSDL Cache policy works with WSDL files hosted on an external URL.\n\nTo refresh a WSDL in the local:/// directory, disable and re-enable the service."}
+{"output": "WAS recently renamed WAS for Developers (WAS4D) to WAS ILAN (see here [https://developer.ibm.com/wasdev/downloads/#asset/WAS_traditional_for_Developers]). In response to this change, RAD 9.6 now packages WAS ILAN available in the RAD_WS_9.6_WASTE_9.0.zip file. It has the same capabilities and updates that RAD users expect."}
+{"output": "If an issue arises during DW trace persistence at runtime, the related messages and stack traces are only available programmatically through the following API: ilog.rules.res.session.IlrSessionResponse.getWarnings() \n\nSo it is possible for an error to remain silent if the warnings above are not explicitly logged by the application."}
+{"output": ""}
+{"output": "Import the certification file into the agent by doing the following command:\n\nNote : You can use either .cer or .pem. \nMake sure the file is in ASCII not binary. \nWhere the /usr/ITM/JRE is your Java location and <fileName> is your file name."}
+{"output": ""}
+{"output": "Set skipsamebatch for VScan tasks  1. Run Rulerunner Manager. \n 2. On the Rulerunner tab, stop the service. \n 3. On the Rulerunner Login tab, click Connect. \n 4. On the Workflow tab, expand the hierarchy on the right and highlight VScan. \n 5. In the Settings section in the lower right, set skipsamebatch to 1. \n 6. Highlight the line labeled <dbs> above VScan in the thread hierarchy. \n 7. Set skipsamebatch to 1 there also. \n 8. Click Save, then go back to the Rulerunner tab and start the service."}
+{"output": "CVEID: CVE-2015-4911 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4911]\n\nDESCRIPTION: An unspecified vulnerability related to the JAXP component could allow a remote attacker to cause a denial of service.\nCVSS Base Score: 5\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/107360 [https://exchange.xforce.ibmcloud.com/vulnerabilities/107360] for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (AV:N/AC:L/Au:N/C:N/I:N/A:P)"}
+{"output": "Configure the WebSphere Application Server data source connection pool so as to eliminate occurrences of StaleConnectionException :\n\n    Set the Minimum connections to 0 to avoid situations where a connection is kept in the pool to meet the minimum requirement, even though it may have been idle for longer than Unused timeout\n    Set the values for Unused timeout and Reap timeout so that the sum does not exceed any network level idle connection timeout"}
+{"output": "Add the following parameters to the generic JVM arguments: \n-XX:+PrintGCDetails \n-XX:+PrintGCDateStamps \n-XX:+PrintHeapAtGC \n-Xverbosegc:file= /tmp/gc_pid$$.vgc"}
+{"output": ""}
+{"output": "If the mime type of the document as shown in system properties in ICN is not text/csv, then Navigator cannot recognize the document and a .dat extension will be added upon download."}
+{"output": "Configure a server daemon to listen and capture the DataPower devices events."}
+{"output": "Health Center is a very low overhead monitoring tool. It runs alongside an IBM Java application with a very small impact on the application's performance (less than 1%). Health Center monitors several application areas, using the information to provide recommendations and analysis that help you improve the performance and efficiency of your application."}
+{"output": "CVEID:CVE-2017-14919 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14919]\nDESCRIPTION:Node.js is vulnerable to a denial of service, caused by an uncaught exception flaw in the zlib module. By making 8 an invalid value for the windowBits parameter, a remote attacker could exploit this vulnerability to cause the application to crash.\nCVSS Base Score: 7.5\nCVSS Temporal Score: Seehttps://exchange.xforce.ibmcloud.com/vulnerabilities/134286 [https://exchange.xforce.ibmcloud.com/vulnerabilities/134286]for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H)"}
+{"output": ""}
+{"output": ""}
+{"output": "If you perform time consuming operations in large repositories, you can increase the timeout value in the web.xml file of the RTS/DC EAR file (jrules-teamserver-<appserver>.ear\\teamserver.war\\WEB-INF) by changing the value of the property ilog.rules.teamserver.transaction.timeout.\n\nYou will find the property in the file web.xml defined as below:\n...\n<context-param>\n<description>Modify the timeout value that is associated with transactions (in seconds)</description>\n<param-name>ilog.rules.teamserver.transaction.timeout</param-name>\n<param-value>600</param-value>\n</context-param> "}
+{"output": "You must install the 5.0.0.8 or later fix pack to upgrade to 6.0.0.0 or later. The 5.0.0.8 fix pack contains a required fix to allow the larger sized firmware image to fit."}
+{"output": "To resolve the problem, you must set the LD_LIBRARY_PATH environment variable to point to the library directory of the GSKit that comes with the IBM web server Plug-in. The precise directory location will depend of the version of Plug-in, and on the bit depth being used (32-bit or 64-bit)."}
+{"output": ""}
+{"output": ""}
+{"output": "Download all of the parts that you need, both required and optional. The parts are listed in the sections below.\n 2. Unpack each of the parts into a single temporary directory on your system.\n 3. Follow the instructions in the Installing [https://www.ibm.com/support/knowledgecenter/SSSHRK_4.2.0/install/task/ins_installing.html] section of the IBM Knowledge Center to install the product."}
+{"output": ""}
+{"output": ""}
+{"output": "There is no support for deleting documents and/or folders from a Box Collaboration folder created via Case Manager at this time."}
+{"output": "If the Software Subscription and Maintenance has expired you will not be able to download the software from Passport Advantage Online.\nIn this case, you would need to renew your software Subscription and Maintenance.\n\nYou can order the Media CD copy of the software your company purchased. The software version is the one up to the time your subscription has expired."}
+{"output": "To resolve this problem, install IIS 6.0 management compatibility pack on your Windows Server."}
+{"output": ""}
+{"output": "Yes, it is expected. Due to IT09990, we changed the fomula for calculating the number of prefetchers to start at database activation time."}
+{"output": "In FEM, change the User Display Name Attribute or Group Display Name Attribute to a valid LDAP entry such as cn, displayName or uid and restart the FileNet Content Engine and Workplace XT instances."}
+{"output": "If the replacement certificate has the same file name of the expired certificate, you MUST disable/enable the certificate object in order to clear all cached references to the expired certificate."}
+{"output": "Navigate to the AppServer folder and remove the following files (they are regenerated with a reinstall of Portal):\n\nlib/ext/commons-codec-1.3.jar\nlib/ext/commons-httpclient-3.0.1.jar\nlib/ext/openid4java-full-0.9.5.jar\nlib/ext/wp.auth.base.sua_RedirectServletFilter.jar\nlib/ext/wp.auth.base.sua_loginmodule.jar\nlib/ext/wp.auth.tai.jar\nlib/wp.user.connections.jar\nlib/wp.wire.jar\nplugins/com.ibm.patch.was.plugin.jar\nplugins/com.ibm.wp.was.plugin.jar\nplugins/wp.ext.jar\nproperties/jndi.properties"}
+{"output": ""}
+{"output": "Reinsert data with codepage conversion enforced by setting the operation system codepage matching to the codepage of data to be inserted"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The DeleteChildType from the Validations library can be used by running it from the parent of the object to be deleted and specifying the specific child."}
+{"output": "The following versions are affected: \n\n * IBM MQ  * Maintenance levels between 8.0.0.0 and 8.0.0.5 \n    * 9.0.0.0 only\n   \n   \n * IBM MQ Appliance  * Maintenance levels between 8.0.0.0 and 8.0.0.5\n   \n   \n * IBM WebSphere MQ  * Maintenance levels between 7.0.1.0 and 7.0.1.14 \n    * Maintenance levels between 7.1.0.0 and 7.1.0.8 \n    * Maintenance levels between 7.5.0.0 and 7.5.0.7"}
+{"output": ""}
+{"output": "IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 ship with versions of Red Hat Enterprise Linux (RHEL) Server that are vulnerable to CVE-2016-8677, CVE-2016-8678 CVE-2016-9298, CVE-2014-9915, CVE-2016-10046, CVE-2016-10047, CVE-2016-10048, CVE-2016-10049, CVE-2016-10050, CVE-2016-10051, CVE-2016-10052, CVE-2016-10053, CVE-2016-10054, CVE-2016-10055, CVE-2016-10056, CVE-2016-10057, CVE-2016-10058, CVE-2016-10059, CVE-2016-10060, CVE-2016-10061, CVE-2016-10062, CVE-2016-10063, CVE-2016-10064, CVE-2016-10065, CVE-2016-10066, CVE-2016-10067, CVE-2016-10068, CVE-2016-10069, CVE-2016-10070, CVE-2016-10071, CVE-2016-10144, CVE-2016-10145, CVE-2016-10146, CVE-2017-5506, CVE-2017-5507, CVE-2017-5508, CVE-2017-5511, CVE-2017-6498, CVE-2017-6499, CVE-2017-6500, CVE-2017-6501, CVE-2017-6502, CVE-2016-10252 and CVE-2017-6497 \n\nIBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 ship with Red Hat Enterprise Linux (RHEL) Server 6.2."}
+{"output": "You will edit the wimconfig.xml file directly. However, before you edit the file, make a backup copy of it. Edit the wimconfig.xml file and search forconnectTimeout. Change this value from connectTimeout=\"20\" to connectTimeout=\"0\" and save the file. \n   \n   \n   A complete restart of the WebSphere Application Server / IBM Business Process Manager environment is required to make this change take effect."}
+{"output": "When a stack overflow occurs, the amount of stack space required by the program exceeds what is configured for the stack in the Java\u2122 Virtual Machine (JVM) process, or the native stack size configured by the operating system. \nSome applications require stacks that are larger than the default size; for example, a graphics-intensive Java program can require a larger stack, which may require an increase in the stack size to avoid StackOverflow."}
+{"output": ""}
+{"output": ""}
+{"output": "Instead of host name, specify a \u201cvalid\u201d IP address for the MS in the <MS_HOME>/bin/setenv.sh file, and in ITCAM 6.1, the ms.properties file."}
+{"output": "If you run your own Java code using the IBM Java Runtime delivered with this product, you should evaluate your code to determine whether the complete list of vulnerabilities are applicable to your code. For a complete list of vulnerabilities, refer to the \u201cIBM Java SDK Security Bulletin\u201d, located in the References section for more information."}
+{"output": ""}
+{"output": "CVEID: CVE-2015-1920 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1920]\nDESCRIPTION: WebSphere Application Server could allow a remote attacker to execute arbitrary code by connecting to a management port and executing a specific sequence of instructions.\nCVSS Base Score: 9.3\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/102404 [https://exchange.xforce.ibmcloud.com/vulnerabilities/102404] for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (AV:N/AC:M/Au:N/C:C/I:C/A:C)"}
+{"output": ""}
+{"output": ""}
+{"output": "For installation & licensing issues on Student version and Graduate pack, contact your vendor."}
+{"output": ""}
+{"output": ""}
+{"output": "OUTPUT_TYPE (STRING|INTEGER|FLOAT - Optional - default string). It defines the type of the first token returned by each row of the script;"}
+{"output": ""}
+{"output": "CVEID: CVE-2017-1694 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1694]\nDESCRIPTION: IBM Integration Bus transmits user credentials in plain in clear text which can be read by an attacker using man in the middle techniques.\nCVSS Base Score: 5.9\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/134165 [https://exchange.xforce.ibmcloud.com/vulnerabilities/134165] for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N)"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Normally, at the end of a ClearQuest installation on UNIX\u00ae based platforms, the cqreg initialize command runs automatically. The command creates the registry structure for database sets. During the installation, the command did not run successfully."}
+{"output": "VULNERABILITY DETAILS\nCVEID:CVE-2016-8610 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8610]\nDESCRIPTION:SSL/TLS protocol is vulnerable to a denial of service, caused by an error when processing ALERT packets during a SSL handshake. By sending specially-crafted packets, a remote attacker could exploit this vulnerability to cause the application to stop responding.\nCVSS Base Score: 7.5\nCVSS Temporal Score: Seehttps://exchange.xforce.ibmcloud.com/vulnerabilities/118296 [https://exchange.xforce.ibmcloud.com/vulnerabilities/118296]for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H) \n\nAFFECTED PRODUCTS AND VERSIONS\nIBM API Connect V5.0.0.0 - V5.0.6.1\n\nREMEDIATION/FIXES\n \n\nProduct VRMF APAR Remediation/First Fix IBM API Connect 5.0.0.0 - 5.0.6.1 LI79599 Apply IBM API Connect V5.0.6.2 or later [https://www.ibm.com/support/fixcentral/swg/quickorder?parent=ibm~WebSphere&product=ibm/WebSphere/IBM+API+Connect&release=5.0.6.2&platform=All&function=all] \nWORKAROUNDS AND MITIGATIONS\nNone"}
+{"output": "Navigate to IBM Rational License Key Center [http://www-01.ibm.com/software/rational/support/licensing/] website. \n    \n    \n    \n 2. Return and generate the license [https://www-304.ibm.com/support/docview.wss?uid=swg21308308] file for IBM Rational Test Workbench Floating License. \n    \n    \n    \n 3. Download and Import the license file again.\n    \n    \n    \n 4. Click on Start > IBM Rational > LMTools > Start/Stop/Reread tab to stop and start the license server.\n    \n    \n    \n 5. Next, click on Start > IBM Rational > LMTools > Server Status to perform status enquiry and look for 'Users of ibmrit' line.\n    \n    \n    \n 6. Reactivate [http://www-01.ibm.com/support/docview.wss?uid=swg21403623] the floating license for Rational Integration Tester using Rational Installation Manager."}
+{"output": ""}
+{"output": ""}
+{"output": "In this particular case, in order to properly run the prerequisite scanner, the codes for DASH and JazzSM should be passed like this: \n\n * \n * \n * \n\n\nThe above will provide a detailed"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "CVEID:CVE-2018-2633 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-2633]\nDESCRIPTION:An unspecified vulnerability related to the Java SE JNDI component could allow an unauthenticated attacker to take control of the system.\nCVSS Base Score: 8.3\nCVSS Temporal Score: Seehttps://exchange.xforce.ibmcloud.com/vulnerabilities/137885 [https://exchange.xforce.ibmcloud.com/vulnerabilities/137885]for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H)"}
+{"output": "7.2.0.0.7 [http://www.ibm.com/support/fixcentral/swg/quickorder?product=ibm/Tivoli/Tivoli+Composite+Application+Manager+for+Applications&release=All&platform=All&function=fixId&fixids=7.2.0.0-TIV-ITCAMAD_WS-IF0007&includeSupersedes=0&source=fc] 7.2.0.0.14 March 9, 2017"}
+{"output": ""}
+{"output": ""}
+{"output": "The overhead of writing these files is negligible, regardless of the hashing method selected."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The solution to the issue of having DataPower vulnerable to the MQ Queue Manager being inaccessible is to change the Retry Attempts parameter on the Configure MQ Queue Manager window from 0 to some number."}
+{"output": ""}
+{"output": "For the HP Integrity NonStop Server H-Series systems, the following system\nsoftware versions are the minimum mandatory level for V5.3.1.12:\n\n- H06.23.01 or later"}
+{"output": "CVEID: CVE-2016-8918 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8918]\nDESCRIPTION: In non-default configurations, IBM Integration Bus could allow a remote user to authenticate without providing valid credentials.\nCVSS Base Score: 5.9\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/118528 [https://exchange.xforce.ibmcloud.com/vulnerabilities/118528] for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N)"}
+{"output": "Immediately purge the pool by invoking the purgePoolContents operation of the data source MBean with the immediate option:\n    Using Jacl:\n    $AdminControl invoke $ds purgePoolContents immediate\n    \n    \n    Using Jython:\n    AdminControl.invoke(ds, \"purgePoolContents\", \"immediate\")\n    \n    \n\nIf the purge operation is successful, no response will be observed. If the purge operation is not successful, the response will indicate a possible reason for failure."}
+{"output": ""}
+{"output": "Recreate the tool and associate it with the menu and try to run the command again."}
+{"output": ""}
+{"output": "DB2 LUW precompile, prep write different code to DB2 z/OS?"}
+{"output": ""}
+{"output": "V8.5 Refresh Pack 5 is intended to be used on IBM Business Process Manager Express, IBM Business Process Manager Standard, IBM Business Process Manager Advanced, and IBM Business Process Manager Advanced - Process Server installations."}
+{"output": ""}
+{"output": ""}
+{"output": "This could be due to amount of Memory allocated to the dataserver."}
+{"output": "This happens when the BIRT Reports is running in Standalone mode and happens due to a new configuration - report.standalone.userid"}
+{"output": "The JobExecutionNode, a Java-based plugin, allows you to execute operating system commands, and invoke jobs in the form of batch/shell scripts from within the message flow. The jobs can be specified on the node property or as a part of the input message."}
+{"output": "Add the following field or tag to your inbound message. For example, if you are sending XML: \n\n<NEWORGID>xxx</NEWORGID> \n\nwhere xxx is the ORGID value. \n\nMake sure that NEWORGID is included on the object structure. \n\nGo To Integration > Object Structures and query the object structure. \n\nFrom the Select Action menu drop down, select Exclude/Include Fields and select the Non-Persistent Fields tab. Include NEWORGID."}
+{"output": "WebSphere Transformation Extender maps that are called from WebSphere Message Broker can use the WebSphere Transformation Extender Resource Registry. WebSphere Message Broker itself does not provide any facility for working with resource registries in areas of the message flow outside of the WebSphere Transformation Extender plugin."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "\n\nCVEID: CVE-2015-0410\nDESCRIPTION: An unspecified vulnerability related to the Security component could allow a remote attacker to cause a denial of service.\nCVSS Base Score: 5\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/100151 for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (AV:N/AC:L/Au:N/C:N/I:N/A:P)\n\nCVEID: CVE-2014-6593\nDESCRIPTION: An unspecified vulnerability related to the JSSE component has partial confidentiality impact, partial integrity impact, and no availability impact.\nCVSS Base Score: 4\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/100153 for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (AV:N/AC:H/Au:N/C:P/I:P/A:N)"}
+{"output": ""}
+{"output": ""}
+{"output": "By default baselining gets enabled with a situation WasAppDiscoverd. This situation is enabled by default and will discover new applications then run a take action to start the baselining. So if this situation is not enabled then you should enable it and assign to the ITCAM App Server managing system list."}
+{"output": ""}
+{"output": "This problem is caused by a highly intermittent error that may allow the sensor reading mechanism to get into a bad state. This bad state then generates the false error messages."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "It is an known limitation of current DB2 V9.7 and above versions' runstats."}
+{"output": "Add the following action prior to NormalizeCCO. \n\n * \n * \n\nThe first parameter is the percentage of a line that two words must be offset to be considered as separate lines. If the value is not set, the default is 50. In the example, if two words are vertically offset by more than 35% of the height of the words, then they are considered to be on separate lines. Lower values are more likely to split words into separate lines. Higher values are more likely to merge words into a single line."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "This APAR fixes the issue. It clears the cache properly even if\n   base entry is different than name in repository.\n   \n   The fix for this APAR is currently targeted for inclusion in\n   fix packs 8.0.0.13 and 8.5.5.9.  Please refer to the\n   Recommended Updates page for delivery information:\n   http://www.ibm.com/support/docview.wss?rs=180&uid=swg27004980"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Disabled diffie-hellman-group-exchange-sha1 and diffie-hellman-group1-sha1 algorithms by default. Disabled MD5-based MAC algorithms. Limited DH-GEX to 4096 bits for Cisco devices."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "You should start from an empty Database; using the default XMETA Database is not recommended because it can become corrupt."}
+{"output": "\"a new property is added to increase the file size limit:\n\n\n\n * \n\n\nAdd the property to $NCHOME/impact/etc/<SERVERNAME>_server.props file \nwhere size limit can be 8192, 16384, 32768, etc.. \" \n\nThe property would have to be added to all ImpactServers in the Cluster and would require a restart to enable - ensuring that the ImpactServer started as Primary had the correct, uncorrupted .type file to be replicated across the Cluster. Also ensure that there are no trailing white-space characters on the property as these invalidate properties in lower versions of Impact. \n\nThe APAR is not an issue in Impact 6 and 7, but one would still have to include this property with an appropriate value to handle a large character length for the USERPARAMETERS parameter. \n\nThe character length includes the whole USERPARAMETERS property name as well as the definition."}
+{"output": "Wpcollector is a command line tool that automates the collection of portal logs and configuration files."}
+{"output": "CVEID: CVE-2016-9693\nDESCRIPTION: IBM Business Process Manager has a file download capability that is vulnerable to a set of attacks. Ultimately, an attacker can cause an unauthenticated victim to download a malicious payload. An existing file type restriction can be bypassed so that the payload might be considered executable and cause damage on the victim's machine.\nCVSS Base Score: 7.1\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/119517 for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L) "}
+{"output": ""}
+{"output": "TOKEN_SEPARATOR (Optional - default semicolon \";\"). \nIt sets the string to be used as separator to split the output row in tokens. It is ignored if TOKEN_TYPES is not set. Empty value (blank) is accepted as separator and multiple consecutive blanks in output rows are considered as a single one."}
+{"output": ""}
+{"output": "The HTTP Session time-out can be set in the following places:\n\n    From the Administrative Console at the server, Enterprise application, and Web application levels\n    At the time when the application is packaged\n    In the application code"}
+{"output": "The simplest solution is to manually reset the EventReader StateChange value via the GUI. Stop the EventReader, open it for edit, click the \"Clear State\" button, exit the editor and restart the EventReader."}
+{"output": "Please consult the security bulletin Vulnerability in Apache Commons affects IBM WebSphere Application Server (CVE-2015-7450) [http://www-01.ibm.com/support/docview.wss?uid=swg21970575] for vulnerability details and information about fixes."}
+{"output": ""}
+{"output": "The default setting of sharing conversations (SHARECNV) value is zero in DataPower mq-qm object. The same default value for MQ SVRCONN channel is 10. The sharing conversations value is \nnegotiated between MQ server and DataPower and the lower value takes effect. However, in current versions of the DataPower firmware, the sharing conversations setting of 1 is treated as 0 when negotiating with MQ server."}
+{"output": ""}
+{"output": ""}
+{"output": "Shutdown the application server running the Atlas applications. \n 2. Locate the script drop_ctxsys_indexes.sql to drop the Oracle Text indexes from the following folder in the Atlas release:\n    Atlas\\Schema\\Deploy\\smf\\db\\etc\\oracle \n 3. Open up a command window to that directory and execute the script using SQL Plus:\n    sqlplus <user>/<password>@<database> @drop_ctxsys_indexes.sql \n 4. Locate the scripts, setup_ctxsys_objects.sql and create_ctxsys_indexes.sql, used to create the Oracle Text preferences and indexes from the following folder in the Atlas release. The <version> folder will differ depending on which version you are currently running.\n    Atlas\\Schema\\Deploy\\smf\\db\\release\\<version>\\oracle\\create\\schema \n 5. Open up a command window to that directory and execute the scripts using SQL Plus.\n    sqlplus <user>/<password>@<database> @setup_ctxsys_objects.sql\n    sqlplus <user>/<password>@<database> @create_ctxsys_indexes.sql \n 6. Start the application server running the Atlas applications."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "A code fix for this issue is integrated into the WebSphere\n   Portal & WCM Combined Cumulative Fix 05 (PI31198 [http://www-01.ibm.com/support/docview.wss?uid=swg1PI31198]) for Portal\n   8.5.0.0 available from Fix Central:"}
+{"output": ""}
+{"output": ""}
+{"output": "Remote users that access Datacap over a WAN can use Taskmaster Web-based \"thin clients\", or FastDoc Capture operating in offline mode."}
+{"output": "WebSphere Application Server and the SDK are leap year compliant."}
+{"output": "WebSphere Application Server and the SDK are leap year compliant."}
+{"output": ""}
+{"output": ""}
+{"output": "CVEID: CVE-2017-3735 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3735]\nDESCRIPTION: OpenSSL could allow a remote attacker to obtain sensitive information, caused by an error while parsing an IPAddressFamily extension in an X.509 certificate. An attacker could exploit this vulnerability to trigger an out-of-bounds read, resulting in an incorrect text display of the certificate.\nCVSS Base Score: 4.3\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/131047 [https://exchange.xforce.ibmcloud.com/vulnerabilities/131047] for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N)"}
+{"output": "CVEID: CVE-2015-1920\nDESCRIPTION: WebSphere Application Server could allow a remote attacker to execute arbitrary code by connecting to a management port and executing a specific sequence of instructions.\nCVSS Base Score: 9.3\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/102404 for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (AV:N/AC:M/Au:N/C:C/I:C/A:C) "}
+{"output": "The getdate() MSSQL function can be replaced by value from DB2 CURRENT DATE special register. On Oracle, sysdate is used to retrieve the current date. \n\nEXAMPLE : MSSQL and transdate <= ( getdate() - 35) \n\n DB2 and transdate <= ( CURRENT DATE - 35 DAYS) \n\n Oracle and transdate <= ( sysdate - 35)"}
+{"output": "CVEID:CVE-2017-10115 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-10115]\nDESCRIPTION:An unspecified vulnerability in Oracle Java SE related to the Java SE, Java SE Embedded, JRockit JCE component could allow an unauthenticated attacker to obtain sensitive information resulting in a high confidentiality impact using unknown attack vectors.\nCVSS Base Score: 7.5\nCVSS Temporal Score: Seehttps://exchange.xforce.ibmcloud.com/vulnerabilities/128876 [https://exchange.xforce.ibmcloud.com/vulnerabilities/128876]for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)"}
+{"output": "The attached Support's guide to the SNMP probe provides details on how best to configure the probe, troubleshoot issues and how to use third party products to test the probes behaviour."}
+{"output": "This error occurs when a mediation primitive is wired more than once to the next mediation primitive. It might seem to be a single wire. However, upon closer inspection, more than one wire exists. \n\n\nBy mistake, primitives might be wired more than once when there is only one wire. See the following screen shot:\n[/support/docview.wss?uid=swg21584783&amp;aid=1]\n\nIf you move the primitives in question, however, you notice that there are more wires underneath:"}
+{"output": ""}
+{"output": "Specify the complete path to the silent response file while launching the silent install."}
+{"output": "CVEID:CVE-2017-10115 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-10115]\nDESCRIPTION:An unspecified vulnerability related to the Java SE, Java SE Embedded, JRockit JCE component could allow an unauthenticated attacker to obtain sensitive information resulting in a high confidentiality impact using unknown attack vectors.\nCVSS Base Score: 7.5\nCVSS Temporal Score: Seehttps://exchange.xforce.ibmcloud.com/vulnerabilities/128876 [https://exchange.xforce.ibmcloud.com/vulnerabilities/128876]for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)"}
+{"output": "GENERIC_CORBA_SupportsGuide_20.pdf"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "This issue has been identified as a product defect under APAR PM50525"}
+{"output": "This probe is written to support Nokia Network Functions Manager for Packet release 17.3."}
+{"output": ""}
+{"output": "TLSv1.2 is supported by using the same fix."}
+{"output": "When an IBM SPSS compressed image is launched, files compressed within it are extracted to the temporary location assigned to the signed in user i.e. /Documents and settings/... or /users.\nThe possibility of these files downloaded improperly exists. You can use a tool such\nas MD5 to verify the file content or simply attempt downloading a second time and test.\n\nOther possible causes of this error:\n- Available space within the temporary location noted by the installer.\n- Ability to write in the temporary location noted by the installer.\n\n\nANSWER\nTransfer the files again, resolved the issue."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Install IBM Business Process Manager interim fix JR50092 as appropriate for your current IBM Business Process Manager or WebSphere Lombardi Edition version."}
+{"output": "To use the GUI, the gtk+ RPM and dependencies must be available on AIX. \n\n\nInstall this set of RPMs on AIX:"}
+{"output": ""}
+{"output": "IBM WebSphere\u00ae Transformation Extender V8.4.1.3 is now available through Passport Advantage."}
+{"output": ""}
+{"output": "The menu AlertsMenu has a tool in it called CLEAR_LWY, however the tool no longer exists."}
+{"output": ""}
+{"output": "Please make the following change in the WAS Admin Console...\nApplications > WebSphere enterprise applications >\nJavaContentRepository > Target specific application status > Check the\nbox for the WebSphere_Portal server > Click Enable Auto Start > Save\nchanges > restart Portal\n\nAfter making this change please attempt the CF upgrade again."}
+{"output": "Follow the below steps to update the property definition properties on ACCE: \n\n\n\n\n 1. Launch ACCE \n 2. Expand the object stores folder and click the object store to open the Object store tab \n 3. Expand the Data Design folder and Classes folder. Click the document class to open Document Class tab \n 4. From Properties tab, open Property Definitions drop down and select the property definition you want to modify \n 5. ACCE will open that property definition in a new Properties tab \n 6. Modify the property definition as required \n 7. Go back to the Class Definition tab and click Save"}
+{"output": "When the \"Too Many Open Files\" error message is written to the logs, it indicates that all available file handles for the process have been used (this includes sockets as well). In a majority of cases, this is the result of file handles being leaked by some part of the application."}
+{"output": "First, a baseline scenario is described in which when using the defaults, there is only 1 record in the SYSTEM.ADMIN.QMGR.EVENT queue, regardless of how many times you restart the queue manager.\n\n\nSecond, a modification is done to the SYSTEM.ADMIN.QMGR.EVENT queue to indicate that the default persistence is enabled, and thus, subsequent events from the stop/start of the queue manager will be kept in the queue.\nalter ql(SYSTEM.ADMIN.QMGR.EVENT) defpsist(YES)"}
+{"output": ""}
+{"output": "Workplace XT created search templates are also supported in ICN with the restriction that the search template cannot be edited in ICN."}
+{"output": ""}
+{"output": "The default setting of sharing conversations (SHARECNV) value is zero in DataPower mq-qm object. The same default value for MQ SVRCONN channel is 10. The sharing conversations value is \nnegotiated between MQ server and DataPower and the lower value takes effect. However, in current versions of the DataPower firmware, the sharing conversations setting of 1 is treated as 0 when negotiating with MQ server."}
+{"output": "Stop the installation. Extract all of the files in the compressed (.zip file) to a new folder, and run the installer executable ('setup.exe') from that new folder."}
+{"output": ""}
+{"output": "A new maintenance.py lifecycle script is available to enable installation and migration of the latest maintenance level of IBM MQ contained in the pattern-type."}
+{"output": ""}
+{"output": "CVEID: CVE-2014-8730 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8730]\nDESCRIPTION: IBM PureApplication Server bundles IBM HTTP Server, which could allow a remote attacker to obtain sensitive information, caused by the failure to check the contents of the padding bytes when using CBC cipher suites of some TLS implementations. A remote user with the ability to conduct a man-in-the-middle attack could exploit this vulnerability via a POODLE (Padding Oracle On Downgraded Legacy Encryption) like attack to decrypt sensitive information and calculate the plain text of secure connections.\nCVSS Base Score: 4.3\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/99216 [https://exchange.xforce.ibmcloud.com/vulnerabilities/99216] for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (AV:N/AC:M/Au:N/C:P/I:N/A:N)"}
+{"output": "Start the Studio through the command line interface using the following command: \n\n\nCastIronStudio.exe -J-Xmx1024m \n\n\nIn this command, \"1024\" is the new memory size that will be allocated to the Studio instead of the default value of 512. This numeric value is in MB."}
+{"output": ""}
+{"output": ""}
+{"output": "Perform steps as mentioned below:\n\n1. Undeploy any existing PolicyAtlas deployments using Oracle Weblogic console\n\n2. Open the PolicyAtlas.ear file using a tool like 7zip or similar and update weblogic.xml file with the changes below:\n\n\n<wls:session-descriptor>\n<wls:cookie-secure>true</wls:cookie-secure>\n<wls:cookie-http-only>true</wls:cookie-http-only>\n<wls:url-rewriting-enabled>false</wls:url-rewriting-enabled>\n</wls:session-descriptor>\n\n3. Save the changes by updating the ear file.\n\n4. Redeploy the updated ear file using Oracle Weblogic console"}
+{"output": "Authenticated user does not have the attribute defined in the backend user registry which matches the attribute defined in the store.puma_default.user.fbadefault.filter property in WP PumaStoreService Resource Environment Provider."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "You can include systemnav=\"false\" in the application presentation XML in order to disable the left navigation pane. \n\nThe following changes in the incident.xml file will disable the left navigation menu pane of the Incident application. \n\nEdit the incident.xml from :- \n\n<presentation apphelp=\"com.ibm.tusc.doc,incident/incident.html\" beanclass=\"com.ibm.tsd.pminc.webclient.beans.PmIncidentAppBean\" id=\"incident\" mboname=\"INCIDENT\" orderby=\"TICKETID\" resultstableid=\"results_showlist\" version=\"7.1.0.0\"> \n\nto :- \n\n<presentation apphelp=\"com.ibm.tusc.doc,incident/incident.html\" beanclass=\"com.ibm.tsd.pminc.webclient.beans.PmIncidentAppBean\" id=\"incident\" mboname=\"INCIDENT\" orderby=\"TICKETID\" resultstableid=\"results_showlist\" version=\"7.1.0.0\" systemnav=\"false\">\n\nImport back the incident.xml and save. With this configuration, the left Navigation Pane menu is no longer visible in the Incident application."}
+{"output": "With persistent sessions enabled, any object that is put into the HTTPSession must implement the serializable interface in order for session manager to store the session data outside of JVM.\n\nWhen PMI is enabled, there is a counter for session data size. In order to evaluate this counter, the session data must be serialized into a byte array stream. Any object that is put into the HTTPSession must implement the serializable interface in order for session manager to convert the session data objects into byte array stream."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "If it is expected you run the Fixpack installation with a non-root user, double check the permission bit for the involved directory tree and in case temporary set them to give write authorization to the user account you are installing the FixPack with. \n\nThen run again the installation program."}
+{"output": "CVEID: CVE-2016-3485 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3485]\nDESCRIPTION: An unspecified vulnerability related to the Networking component has no confidentiality impact, low integrity impact, and no availability impact.\nCVSS Base Score: 2.9\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/115273 [https://exchange.xforce.ibmcloud.com/vulnerabilities/115273] for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N)"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Delete the user's .eclipse/ibm.software.delivery.platform_7.5.0_???? directory. \n\nFor example: \n\nrm -rf /home/joe/.eclipse/ibm.software.delivery.platform_7.5.0_1529064711 \n\n \n\nThen relaunch the package."}
+{"output": "Obtain patch for APAR PI64816."}
+{"output": ""}
+{"output": "The new data collector in IBM Business Process Manager V8.5 is designed for ease of use to gather some of the standard information that is needed to debug IBM Business Process Manager issues."}
+{"output": "Some files are not correctly overwritten / modified during the upgrade."}
+{"output": "The following steps can be used to clear each failed resource using cib_tool.pl. \n\n[root@system pts]# /opt/nz-hwsupport/pts/cib_tools.pl\nheartbeat is running on ha1\nheartbeat is running on ha2\nNo split brain detected on ha1\nNo split brain detected on ha2\nCRM running on ha1\nCRM running on ha2"}
+{"output": "Add the XML toolkit xml4c library directory to the LIBPATH environment variable.\n\nExample:\n\nexport LIBPATH=$LIBPATH:/usr/lpp/ixm/xslt4c-1_11/lib/"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "CVEID: CVE-2016-8971 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8971]\nDESCRIPTION: IBM MQ could allow an authenticated user with queue manager permissions to cause a segmentation fault. This would result in the machine needing to be rebooted to resume normal operations.\nCVSS Base Score: 5.3\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/118862 [https://exchange.xforce.ibmcloud.com/vulnerabilities/118862] for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H)"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Microsoft Edge is supported starting with IBM Content Collector 4.0.1 Fix Pack 2."}
+{"output": "coded a facility class for the FEK.CMD.SEND and FEK.CMD.SEND.CLEAR."}
+{"output": ""}
+{"output": ""}
+{"output": "To keep only the latest 24 hours every day (regular pruning), you can schedule a daily job to run the kd4TrimDB2db utility provided above."}
+{"output": "If you see Unknown, then you know the baselining has not started or not been calculated."}
+{"output": ""}
+{"output": "There would be NoClassDefFoundError observed after applying the fix because the API in HTTPCore and HTTPClient libraries are no long visible to application. To resolve this error, application may need to be updated with HTTPCore and HTTPClient libraries bundled."}
+{"output": "If base entry and name in repository is different and\n   clearCache functionality is used with clearEntity mode then\n   virtual member manager (VMM) still looks in the cache and gets\n   the entity from the cache instead of fetching it from the LDAP\n   server."}
+{"output": "During an insert of data using CLP characters, they do not go through codepage conversion.\nIf operating system and database codepage both are UTF-8, but the data to be inserted is not Unicode, then data in the database might have incorrect codepoints (not-Unicode) and the above error will be a result during data retrieval."}
+{"output": "Consider forwarding the PureApplication System Events to an external monitoring system, such as IBM Netcool/OMIbus. and enabling the call home feature. \n\n \n\nWith PureApplication System firmware versions 2.1.0.1 or newer you can use the System Health check report to see a consolidated view of some of the PureApplication System UI pages. \n\nSystem > System Troubleshooting, click on System Health Check."}
+{"output": ""}
+{"output": ""}
+{"output": "Use Installation Manager to install and update Packaging Utility."}
+{"output": "The license features that come incorporated with IBM Rational Rhapsody Tools & Utilities Add on keys are as follows: \n\n * ReporterPro \n * Reporter"}
+{"output": "The fix for this APAR is currently targeted for inclusion in\n   fix pack 8.5.5.9."}
+{"output": ""}
+{"output": ""}
+{"output": "The address information in the USPS database on the data disk is automatically disabled 105 days after the date of issue. IBM refreshes the data disk on the 14th day of every month, or the previous business day. You must ensure that you obtain the refreshed data from Passport Advantage on a regular schedule so that you avoid issues that are associated with disabled address information."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Maximo 6.x MEA \n\n1. Go To Integration -> Integration Object \n\nOn the Persistent Fields tab, exclude HASLD\nOn the Non-Persistent Fields tab, include DESCRIPTION_LONGDESCRIPTION \n\nMaximo 7.x MIF\n\n1. Go To Integration -> Object Structures \n\nClick Select Action -> Exclude/Include Fields \n\nOn the Persistent Fields tab, exclude HASLD\nOn the Non-Persistent Fields tab, include DESCRIPTION_LONGDESCRIPTION \n\nMaximo 6.x/7.x XML\n\nAdd the long description tag to the inbound XML:\n\n<DESCRIPTION_LONGDESCRIPTION>xxxxx</DESCRIPTION_LONGDESCRIPTION> \n\nDo not include the HASLD tag. This column will be set automatically."}
+{"output": ""}
+{"output": "Transient user support [http://www-01.ibm.com/support/knowledgecenter/SSHRKX_8.5.0/mp/overview/new_cf08.dita?lang=en] has been introduced for SAML TAI [http://www-01.ibm.com/support/knowledgecenter/SSHRKX_8.5.0/mp/wcm/wcm_secure_int_tai_auth.dita?lang=en] starting with Cumulative Fix (CF) #8 for 8.5. Refer to the WebSphere Portal Security blog [https://www.ibm.com/developerworks/community/blogs/8f2bc166-3bdc-4a9d-bad4-3620dbb3e46c/entry/portal_transient_user_support_with_was_saml_tai_business_case_clarification?lang=en] for more details regarding the business case and implementation details."}
+{"output": ""}
+{"output": "It is an known current limitation of DB2."}
+{"output": ""}
+{"output": "One of the required fields in the configuration does not have a value"}
+{"output": "Enhancement to allow the gateway to accommodate a change in REST API behavior between ServiceNow versions Eureka/Fiji compared to Geneva."}
+{"output": "For installation & licensing issues on Student version and Graduate pack, contact your vendor."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Restriction in remote login using ssh"}
+{"output": "IBM BPM V8.5.6.0 Java 6 or Java 7*"}
+{"output": ""}
+{"output": "The JBoss service is not available to run as a Windows service when configured with the ITCAM for J2EE agent/DC because this involves changes to the JBoss native connector files and this is currently not supported."}
+{"output": "IBM BPM V8.5.6 and V8.5.7 support Java 6 and Java 7, but do not support Java 8."}
+{"output": "Verify the Content Engine Bootstrap User has Full Control on the Object Store and all associated Storage Areas. \n    \n    \n 2. Inspect Storage Area security by right-clicking on the Object Store\n    \n    \n 3. Choose Properties\n    \n    \n 4. Select the All Properties radio button and view the Storage Area property name\n    \n    \n 5. Click on the drop down list to select the Storage Area. \n    \n    \n 6. The Storage Area properties screen will appear. \n    \n    \n 7. Verify the Security tab allows the Content Engine Bootstrap User has Full Control."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The lock timeouts can be avoided by only having a single DB2 pureScale member active during FileNet CM addon installation. Once addon installation has completed successfully, the other members can be brought back online."}
+{"output": ""}
+{"output": "Support for Arabic requires that customers license NovoDynamics NovoVarus separately and install it on the Rulerunner machine where the Datacap Studio actions for Arabic (Datacap.Libraries.NovoDynamics) will be running."}
+{"output": "Assigning the variable prior to the function call will ensure that the value is passed to the User Defined Function."}
+{"output": "to use the reclaimable storage feature, make sure to create the dms or automatic storage tablespaces in db2 version 9.7 or later  example testcase on syscatspace dms tablespace which has reclaimable storage enabled "}
+{"output": ""}
+{"output": "HSM-enabled DataPower appliances support the export of private keys using the crypto-export command. For key export to work, various conditions must be met: \n\n * HSMs must be initialized and in the same key sharing domain on exporting and importing machines \n * The private key in question must be marked exportable at keygen time (see keygen's exportable option) \n * HSMs on exporting and importing machines must share internal key-wrapping keys (see hsm-clone-kwk command). A key-wrapping key is a key that encrypts another key."}
+{"output": "1. On DASH server, navigate to <JazzSM Home>/profile/config/cells/JazzSMNode01Cell/applications/isc.ear/deployments/isc/isclite.war/WEB-INF\n\n\n2. Take a backup of consoleProperties.xml\n\n\n3. Open consoleProperties.xml in edit-mode.\n\n\n4. Search for \"LTPAFIX\" and change the value from \"true\" to \"false\"."}
+{"output": "SSL Proxy requests will work using the CONNECT method for SSL Tunneling when using a Multi-Protocol Gateway when configuring in a User Agent's HTTP Proxy Policy.\n\nThe XML Firewall service is not designed to use the CONNECT method for SSL Tunneling."}
+{"output": "Open up IIS 7.5 \n 2. Click on the root folder of your Cognos installation (E.g. C1021GA) in the navigation pane on the left side \n 3. When the root folder is selected, double-click 'Authentication' \n 4. Ensure that anonymous access is enabled \n 5. Repeat steps 3 and 4 for the image folder and it's parent folder. \n 6. If the user is concerned about security, they may want to restrict the child-folders (E.g. cgi-bin) and change the authentication settings accordingly \n 7. Run the report in export as Excel 2007 and PDF"}
+{"output": "Backup the \\Datacap\\DotEdit\\apps.ini file. If the file does not exist, create a new one or copy it from \\Datacap\\tmweb.net. \n 2. Open it in notepad.exe or other editor. \n 3. Find the app to be modified (for example [APT]). If it does not exist, create a new section with the application name listed between square brackets. \n 4. Add a new line containing BatchLimit=xxx, where xxx is the number of batches to be displayed. \n 5. Save the file."}
+{"output": "All versions of WebSphere MQ 5.3 and MQ 8 for HPE NonStop Server"}
+{"output": ""}
+{"output": ""}

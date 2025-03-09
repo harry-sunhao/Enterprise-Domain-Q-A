@@ -1,0 +1,310 @@
+{"output": "Web GUI 8.1 FP7 requires DASH 3.1.2.1 or later.\n\nYou wanted to install Web GUI 8.1 FP7, but your DASH version does not meet the required version.\n\nIM 1.8 displayed the following:\n\n     ERROR: The installed IBM Dashboard Application Services Hub version is 3.1.0.3, but requires version 3.1.2.1 or later."}
+{"output": ""}
+{"output": "Unable to open a profile in FileNet Content Engine Configuration Manager User Interface (CMUI) on Redhat Linux 7.x.\n\nCMUI will javacore with the following in the javacore.txt:\n\n1XHEXCPCODE J9Generic_Signal_Number: 00000004\n1XHEXCPCODE Signal_Number: 0000000B\n1XHEXCPCODE Error_Value: 00000000\n1XHEXCPCODE Signal_Code: 00000080\n1XHEXCPCODE Handler1: F7169E6A\n1XHEXCPCODE Handler2: F711400A\n1XHEXCPCODE InaccessibleAddress: 00000000\nNULL\n1XHEXCPMODULE Module: /lib/libcairo.so.2\n1XHEXCPMODULE Module_base_address: D5436000\n\n\"adwaita-gtk2-theme\" (32 and 64 bit) and \"adwaita-gtk3-theme\" 64 bit libraries were missing.\n\nInstall the missing libraries \"adwaita-gtk2-theme\" (32 and 64 bit) and \"adwaita-gtk3-theme\" 64 bit. Please contact RedHat to obtain the missing libraries."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The Netcool/OMNIbus V8.1 version of this gateway supports the following Operating Systems:\n\nAIX, Linux, Solaris, Windows and zLinux.\n\nIf you are running Netcool/OMNIbus V8.1, a single package contains versions of the gateway for all supported Operating Systems. To obtain this package, use the Find by part number field to search for part number: CN6I1EN\n\nNetcool/OMNIbus V7.4.0\n\nIf you are running Netcool/OMNIbus V7.4.0, a separate package is supplied for each Operating System. To obtain this new package, use the Find by part number field to search for the part number that corresponds to your Operating System as shown in the table below."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "To proceed when the `jextract` utility is throwing an `OutOfMemory` error, refer to the following information from the context:\n\n\"The problem is caused when the process that generated the core dump is badly damaged and the resulting core dump file is corrupted.\"\n\n\"The jextract tool has been updated to avoid going out of memory in this way. Depending on the corruption to the core dump jextract may still fail to read it but should exit with an error message instead.\""}
+{"output": "SYMPTOM\nnzudxcompile command returns an \"Argument list too long\" error and aborts."}
+{"output": ""}
+{"output": "The information contained in this document has been moved to developerWorks Answers located here [https://developer.ibm.com/answers/questions/192324/installation-manager-requires-repositories-for-all.html]. This technote will be archived in 60 days. Please bookmark the new location."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The information you are looking for regarding the Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect IBM Integration Bus and WebSphere Message Broker (CVE-2015-0138) is not provided in the given context. The context provided discusses vulnerabilities related to CVE-2016-3485 and does not mention CVE-2015-0138 or the \"FREAK: Factoring Attack on RSA-EXPORT keys\" TLS/SSL client and server vulnerability.\n\nTo find the information you need, you may want to refer to the following resources:\n\n1. **IBM Security Bulletin**: Multiple vulnerabilities in IBM Java Runtime affect WebSphere Message Broker and IBM Integration Bus (CVE-2016-3485)\n   - URL: http://www.ibm.com/support/docview.wss?uid=swg21994213\n\n2. **IBM Java SDK Security Bulletin**:\n   - URL: http://www.ibm.com/support/docview.wss?uid=swg21986642\n\n3. **IBM Secure Engineering Web Portal**:\n   - URL: http://www.ibm.com/security/secure-engineering/bulletins.html\n\n4. **IBM Product Security Incident Response Blog**:\n   - URL: http://www.ibm.com/blogs/psirt\n\nThese resources may contain additional security bulletins or related information that could help you find the details you are seeking."}
+{"output": ""}
+{"output": "To refresh a WSDL in the local:/// directory, disable and re-enable the service."}
+{"output": "The context provided does not contain information about the WebSphere Application Server 9.0.0.4 fix for developers."}
+{"output": "To diagnose the issue where no trace is logged in Decision Warehouse and no records can be found in the EXECUTION_TRACES table for a certain ruleset, follow these steps:\n\n1. **Check Decision Warehouse Trace Entries**: Look for Decision Warehouse trace entries in the Rule Execution Server console for your test scenarios. Search by date/time in the Decision Warehouse tab of the Rule Execution Server console since the Decision ID and ruleset version are automatically generated with UUIDs. Match the date and time to identify the traces corresponding to your DVS tests.\n\n2. **Review Server Logs**: Review the logs for the target server for your DVS tests. The name of the target server is mentioned in the error message. This is the server that hosts the Rule Execution Server executing the DVS tests.\n\n3. **Activate Debug Information**: If no trace for your DVS tests is saved in DW and nothing relevant shows in the server logs to explain why the trace is not logged, refer to technote \"Obtaining debug information during Decision Warehouse trace capture\" to activate some trace for DW.\n\n4. **Ensure Proper Setup**: Ensure that Decision Warehouse is properly set up to log the trace for your DVS tests. Refer to technote \"Decision Warehouse query does not return any data for ruleset executions\" for troubleshooting DW issues that prevent the trace from being saved.\n\n5. **Check Memory and Trace Size**: Ensure that the target server hosting Rule Execution Server has sufficient memory to retrieve that trace. Alternatively, reduce the size of the trace, depending on what you need to retrieve when running your tests, as explained in technote \"Reducing the size of Decision Warehouse trace when running scenario suites\"."}
+{"output": ""}
+{"output": "For DataPower agent v7.1 FP2 and FP3 -\n\nOn agent side, we can configure 1 certificate for every DP appliance. And the configuration is only used for agent to import the certificate info cacerts as trusted certificate. When agent is started, it will load the valid certificate from cacerts to connect to DP appliance.\n\nSo you need not care the key alias, you only need configure the valid certificate for every DP appliance.\n\n*** For FP2/FP3, you only need configure the certificate as \"SSL Proxy Profile\" as below\n[/support/docview.wss?uid=swg21982765&aid=1] [/support/docview.wss?uid=swg21982765&aid=1]\n\nFor DataPower agent v7.1 FP1 (include IF01 and IF02) and earlier version -\n\nAgent can not import the certficate automatically. So we need import the valid certificate via command keytool and provide an alias for every certificate. For different certificate, you can provide different alias.\n\n*** For FP1 or earlier version, you need import the certificates via the command as below\n\n/opt/IBM/ITMCHL/JRE/lx8266/bin/keytool -import -trustcacerts -alias ligitalsso -keystore /opt/IBM/ITMCHL/JRE/lx8266/lib/security/cacerts -storepass changeit -file /NEWSSL-sscert.pem\n\nligitalsso is alias, and /NEWSSL-sscert.pem is the path of certificate.\n\nYou can provide different for different certificate."}
+{"output": ""}
+{"output": ""}
+{"output": "The information you are looking for regarding the Security Bulletin: Multiple vulnerabilities have been identified in WebSphere Application Server shipped with WebSphere Service Registry and Repository (CVE-2015-4911) is not provided in the given context. The context only includes information about the following security bulletins:\n\n- IBM Security Bulletin: A security vulnerability has been identified in the WebSphere Application Server where the Rational Asset Manager is deployed. (CVE-2017-1743)\n- IBM Security Bulletin: A security vulnerability has been identified in the WebSphere Application Server where the Rational Asset Manager is deployed. (CVE-2017-1681)\n\nTo find details about the Security Bulletin for CVE-2015-4911, you may need to refer to other IBM security bulletins or resources."}
+{"output": ""}
+{"output": "For HP-UX, to write verbose GC output to a log file other than the native_stdout, add the following parameters to the generic JVM arguments:\n\n-XX:+PrintGCDetails\n-XX:+PrintGCDateStamps\n-XX:+PrintHeapAtGC\n-Xverbosegc:file=/tmp/gc_pid$$.vgc\n\nTo enable log file rotation:\n-XX:+UseGCLogFileRotation\n-XX:NumberOfGCLogFiles=10\n-XX:GCLogFileSize=10M"}
+{"output": ""}
+{"output": "IBM Content Navigator v2.0.3 is adding a .dat extension to a CSV file during Download action on a document. Why is this the case?\n\nA CSV document is basically a plain text file. If the mime type of the document as shown in system properties in ICN is not text/csv, then Navigator cannot recognize the document and a .dat extension will be added upon download. The correct mime type for a CSV file is text/csv."}
+{"output": "The limitations of syslog-TCP log target using DataPower Gateways include:\n\n* When the destination server for a syslog-tcp log target is unavailable, the CPU on the DataPower Gateway might rise dramatically due to excessive syslog-tcp connection attempts.\n* Many syslog-tcp targets going to a remote syslog server which is down might rise DataPower CPU usage.\n\nFor a workaround, consider the following:\n\n* Add tuning parameters to syslog-tcp logging targets to allow customers to reduce the syslog retries to the syslog server.\n* Fix is available in 7.1.0.16, 7.2.0.14, 7.5.0.7, 7.5.1.6, 7.5.2.4 and 7.6.0.0.\n* For a list of the latest fix packs available, please see: http://www-01.ibm.com/support/docview.wss?uid=swg21237631."}
+{"output": "No, a Java profiler is not provided by default with WAS 8.0. There is nothing to activate via the WAS admin console."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The Plug-in log file reports an error message after installing and configuring the WebSphere Plugin 8.5 version on an Apache 2.4 webserver due to the following issues:\n\n1. **Security Library Loading Failure**: The error message indicates that the security library (gsk library) failed to load from the specified path. This is evident from the log entry:\n   ```\n   ERROR: lib_security: loadSecurityLibrary: Failed to load gsk library from /opt/IBM/WebSphere/Plugins/gsk8/gsk8_64\n   ```\n\n2. **Security Initialization Failure**: The failure to load the security library results in the inability to initialize security for the transport layer, as shown in the log:\n   ```\n   ERROR: ws_transport: transportInitializeSecurity: Unable to load security library\n   ```\n\n3. **HTTPS Transport Skipped**: Due to the security initialization failure, the HTTPS transport is skipped, which is logged as:\n   ```\n   ERROR: ws_server: serverAddTransport: Failed to initialize security\n   ERROR: ws_server: serverAddTransport: HTTPS Transport is skipped\n   ```\n\nThese errors are specific to the configuration and setup of the WebSphere Plugin 8.5 on a Linux platform with an Apache 2.4 webserver."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "It is not possible, nor required, to transfer a license from an existing product installation to a new product installation in order to use the product on a new host machine/computer. Due to the nature of the IBM SPSS software licensing technology, a license created for use on one product host machine/computer can not be used on a different host machine/computer. If you wish to install and license an IBM SPSS product on a new computer, you need only: 1. Install the software on the new host machine/computer. 2. License the software on the new host machine/computer. If you have authorization code for the product, you may use this authorization code. If you do not have an authorization code for the product, instructions for creating an authorization code can be found here. [http://www-01.ibm.com/support/docview.wss?uid=swg21980065]"}
+{"output": ""}
+{"output": ""}
+{"output": "Due to IT09990, we changed the formula for calculating the number of prefetchers to start at database activation time. Starting from 10.5FP7, we use the following formula:\n\nnumber of prefetchers =\nmax( max( max over all table spaces( parallelism setting ),\nnumber of cores * number of SMT threads ), 12 )\n\nSo you can see the following output in 10.5FP6 and FP7:\n\nFP6:\n$ db2 get db cfg | grep NUM_IOSERVERS\nNumber of I/O servers (NUM_IOSERVERS) = AUTOMATIC(16)\n\nFP7:\n$ db2 get db cfg | grep NUM_IOSERVERS\nNumber of I/O servers (NUM_IOSERVERS) = AUTOMATIC(12)"}
+{"output": "After logging into FileNet Workplace XT, a java.lang.NullPointerException error is logged when bootstrapping the object store or when accessing Site Preferences/Access Role.\n\nHere's the error stack,\n\nError Stack Trace extracted from the J2EE Application Server error log:\n\njava.lang.NullPointerException\n\nat org.apache.jasper.runtime.JspWriterImpl.write(JspWriterImpl.java:421)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefAccessRolesInfoPage.renderRoleMembers(PrefAccessRolesInfoPage.java:254)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefAccessRolesInfoPage.renderRole(PrefAccessRolesInfoPage.java:220)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefBootstrapInfoPage.renderAdminRole(PrefBootstrapInfoPage.java:131)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefBootstrapInfoPage.render(PrefBootstrapInfoPage.java:303)"}
+{"output": "The error message \"certificate has expired\" after adding a new certificate might be due to the fact that the old intermediate and the new intermediate have the same \"issued by/to\" name, and it was only the expiry date that changed. When opening the certificate, it can still give the error as the old intermediate and the new intermediate have the same \"issued by/to\" name."}
+{"output": "The provided context does not contain information directly addressing the issue of uninstalling Portal 8.0 and then failing to reinstall it into the same existing WAS environment. Therefore, based on the given context, I cannot provide an exact sentence from the context that answers the question."}
+{"output": ""}
+{"output": "When doing a table mapping with DB2 as source, selecting a table which contains special characters on column comments like:\n\nCOMMENT ON COLUMN <Schema>.<Table Name>.<Column> \nIS 'Test comment \u20181\u2019 complete';\n\nMapping fails with following error message:\nTable <Schema>.<Table Name> could not be found in the database."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Yes, IBM MQ and IBM MQ Appliance are impacted by the SWEET32 Birthday attack if they are running triple-DES cipher. The affected CipherSpec includes:\n- TRIPLE_DES_SHA_US\n- FIPS_WITH_3DES_EDE_CBC_SHA\n- ECDHE_ECDSA_3DES_EDE_CBC_SHA256\n- ECDHE_RSA_3DES_EDE_CBC_SHA256"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "To prevent this error, the stack size available to the application should be increased. Following are the steps to do so:\n\n1. Locate the service_mem_settings.ini file in the conf directory. This directory is usually under the $TOP/bin directory but may be in a custom location if you have horizontal clustering.\n\n2. This file contains JVM arguments for the various services, for example, the following flag for the appserver process:\nAPPSVR_MEMORY_FLAG=-Xmx1024m -Xms256m\n\nThe above entry illustrates that the maximum heap size is 1024 MB while the default starting heap size is 256 MB. To increase the heap size, we can add another -Xss argument to it:\nAPPSVR_MEMORY_FLAG=-Xmx1024m -Xms256m -Xss2048k\n\nThe above entry will set the stack size to 2 MB and you may increase it further if that is not sufficient. This is applicable for all services and not just the appserver.\n\n3. Restart the application using scripts under $TOP/bin/go directory."}
+{"output": ""}
+{"output": ""}
+{"output": "The WebSphere where the ITCAM Data Collector is running will be using Java version = 1.7.0, Java Compiler = j9jit26, Java VM name = IBM J9 VM."}
+{"output": "You can find detailed information regarding the Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affecting WebSphere Message Broker and IBM Integration Bus at the following URL:\n\nSecurity Bulletin: Multiple vulnerabilities in IBM Java Runtime affect WebSphere Message Broker and IBM Integration Bus (CVE-2016-3485)\nhttp://www.ibm.com/support/docview.wss?uid=swg21994213 [http://www.ibm.com/support/docview.wss?uid=swg21994213]"}
+{"output": ""}
+{"output": "The information you are looking for regarding the Security Bulletin: Security Vulnerability in IBM WebSphere Application Server affecting IBM SOA Policy Gateway Pattern for AIX Server 2.5 (CVE-2015-1920) is not provided in the given context. Please consult the security bulletin Security Vulnerability in IBM WebSphere Application Server (CVE-2015-1920) [http://www-01.ibm.com/support/docview.wss?uid=swg21883573] for vulnerability details and information about fixes."}
+{"output": ""}
+{"output": ""}
+{"output": "It is not possible, nor required, to transfer a license from an existing product installation to a new product installation in order to use the product on a new host machine/computer. Due to the nature of the IBM SPSS software licensing technology, a license created for use on one product host machine/computer can not be used on a different host machine/computer. If you have authorization code for the product, you may use this authorization code. If you are using a pre-existing authorization code and receive a 'You are not allowed to generate any more new licenses' message, instructions for resolving this issue can be found here. [http://www.ibm.com/support/docview.wss?uid=swg21480566]"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The information regarding the Security Bulletin: Vulnerability identified in OpenSSL shipped with IBM API Connect (CVE-2016-8610) can be found in the provided context. Here is the relevant information:\n\n\"IBM Security Bulletin: Vulnerability identified in OpenSSL shipped with IBM API Connect (CVE-2016-8610) - United States\nSECURITY BULLETIN\n\nSUMMARY\nAn SSL vulnerability was disclosed by the OpenSSL Project. IBM API Connect has addressed the applicable CVE.\n\nVULNERABILITY DETAILS\nCVEID:CVE-2016-8610 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8610]\nDESCRIPTION:SSL/TLS protocol is vulnerable to a denial of service, caused by an error when processing ALERT packets during a SSL handshake. By sending specially-crafted packets, a remote attacker could exploit this vulnerability to cause the application to stop responding.\nCVSS Base Score: 7.5\nCVSS Temporal Score: Seehttps://exchange.xforce.ibmcloud.com/vulnerabilities/118296 [https://exchange.xforce.ibmcloud.com/vulnerabilities/118296]for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H)\n\nAFFECTED PRODUCTS AND VERSIONS\nIBM API Connect V5.0.0.0 - V5.0.6.1\n\nREMEDIATION/FIXES\nProduct VRMF APAR Remediation/First Fix IBM API Connect 5.0.0.0 - 5.0.6.1 LI79599 Apply IBM API Connect V5.0.6.2 or later [https://www.ibm.com/support/fixcentral/swg/quickorder?parent=ibm~WebSphere&product=ibm/WebSphere/IBM+API+Connect&release=5.0.6.2&platform=All&function=all]\nWORKAROUNDS AND MITIGATIONS\nNone\n\nGET NOTIFIED ABOUT FUTURE SECURITY BULLETINS\nSubscribe to My Notifications [ http://www-01.ibm.com/software/support/einfo.html] to be notified of important product support alerts like this.\n\nREFERENCES\nComplete CVSS v3 Guide [http://www.first.org/cvss/user-guide]\nOn-line Calculator v3 [http://www.first.org/cvss/calculator/3.0]\n\nRELATED INFORMATION\nIBM Secure Engineering Web Portal [http://www.ibm.com/security/secure-engineering/bulletins.html]\nIBM Product Security Incident Response Blog [http://www.ibm.com/blogs/psirt]\n\nCHANGE HISTORY\n04 May 2017: Original version published\n\n*The CVSS Environment Score is customer environment specific and will ultimately impact the Overall CVSS Score. Customers can evaluate the impact of this vulnerability in their environments by accessing the links in the Reference section of this Security Bulletin.\n\nDISCLAIMER\nAccording to the Forum of Incident Response and Security Teams (FIRST), the Common Vulnerability Scoring System (CVSS) is an \"industry open standard designed to convey vulnerability severity and help to determine urgency and priority of response.\" IBM PROVIDES THE CVSS SCORES \"AS IS\" WITHOUT WARRANTY OF ANY KIND, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. CUSTOMERS ARE RESPONSIBLE FOR ASSESSING THE IMPACT OF ANY ACTUAL OR POTENTIAL SECURITY VULNERABILITY.\""}
+{"output": "*  Unable to launch RTW Eclipse Client v8.5 with Floating license support\n\n*  The license check was failing due to an incorrect version specified for the RTW offering.\n\n*  RTW 8.5 doesn't work with floating license configured because of an incorrect version specified in the product offering."}
+{"output": ""}
+{"output": ""}
+{"output": "The document does not provide specific instructions on how to run the prerequisite scan for JazzSM. It only mentions the need to upgrade the Prerequisite Scanner to resolve installation issues."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The information you are looking for regarding the Security Bulletin: Multiple Vulnerabilities identified in IBM\u00ae Java SDK affect WebSphere Service Registry and Repository and WebSphere Service Registry and Repository Studio, specifically related to CVEID: CVE-2018-2633, is not provided in the given context. The context provided does not mention WebSphere Service Registry and Repository or WebSphere Service Registry and Repository Studio, nor does it reference CVE-2018-2633."}
+{"output": "Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available?\n\nThe context provided does not mention ITCAM Agent for WebSphere Applications 7.2.0.0.7."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The solution to the issue of having DataPower vulnerable to the MQ Queue Manager being inaccessible is to change the Retry Attempts parameter on the Configure MQ Queue Manager window from 0 to some number. As an example, change the parameters as follows: \n\n* Retry Attempts - change the default of 0 to 6 Retry Interval - change the default of 1 to 10 seconds Long Retry Interval - change the default of 1800 to 600 seconds (10 minutes) \n\nIn the event that the Queue Manager is down or a connection is not established, the above example configuration will allow the MQ QM Object to retry 6 times with 10 second intervals. After 6 attempts, the MQ QM object will retry every 10 minutes."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Upgrading from IBM BPM 8.5 to IBM BPM 8.5.5 is not explicitly mentioned in the provided context. The context focuses on post-upgrade tasks for IBM Business Process Manager V8.5.7 Cumulative Fix 2017.06 and IBM Business Process Manager V8.5.7 Cumulative Fix 2016.12. It does not provide information on upgrading from IBM BPM 8.5 to IBM BPM 8.5.5."}
+{"output": ""}
+{"output": ""}
+{"output": "Why does the Dataserver service change from Healthy to Vulnerable after logging into StoredIQ Application Stack?\n\nThis could be due to the amount of Memory allocated to the dataserver."}
+{"output": "This happens when the BIRT Reports is running in Standalone mode and happens due to a new configuration - report.standalone.userid"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The information regarding \"Security Bulletin: Multiple vulnerabilities in IBM Java SDK affect IBM OS Images for Red Hat Linux Systems and AIX (CVE-2015-0410 and CVE-2014-6593)\" can be found in the provided context under the following sections:\n\n**SUMMARY**\nThere are multiple vulnerabilities in IBM\u00ae SDK Java\u2122 Technology Edition Version 6 and 7 that are used by IBM OS Images for Red Hat Linux Systems and AIX. These issues were disclosed as part of the IBM Java SDK updates in January 2015.\n\n**VULNERABILITY DETAILS**\nCVEID: CVE-2015-0410 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0410]\nDESCRIPTION: An unspecified vulnerability related to the Security component could allow a remote attacker to cause a denial of service.\nCVSS Base Score: 5\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/100151 [https://exchange.xforce.ibmcloud.com/vulnerabilities/100151] for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (AV:N/AC:L/Au:N/C:N/I:N/A:P)\n\nCVEID: CVE-2014-6593 [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6593]\nDESCRIPTION: An unspecified vulnerability related to the JSSE component has partial confidentiality impact, partial integrity impact, and no availability impact.\nCVSS Base Score: 4\nCVSS Temporal Score: See https://exchange.xforce.ibmcloud.com/vulnerabilities/100153 [https://exchange.xforce.ibmcloud.com/vulnerabilities/100153] for the current score\nCVSS Environmental Score*: Undefined\nCVSS Vector: (AV:N/AC:H/Au:N/C:P/I:P/A:N)\n\n**AFFECTED PRODUCTS AND VERSIONS**\nIBM OS Image for Red Hat Linux Systems 2.0.0.1 and earlier.\nIBM OS Image for AIX 2.0.0.1 and earlier.\n\n**REMEDIATION/FIXES**\nThe deployed Red Hat Linux-based and AIX virtual machines on IBM PureApplication Systems types are affected. The solution is to apply the following IBM PureApplication System fix to the deployed virtual machines.\n\nJava Update for Linux\nhttp://www-933.ibm.com/support/fixcentral/swg/selectFixes?parent=PureSystems&product=ibm/WebSphere/PureApplication+System&release=All&platform=All&function=fixId&fixids=+Java_Update_Linux_2++&includeSupersedes=0 [http://www-933.ibm.com/support/fixcentral/swg/selectFixes?parent=PureSystems&product=ibm/WebSphere/PureApplication+System&release=All&platform=All&function=fixId&fixids=+Java_Update_Linux_2++&includeSupersedes=0]\n\nJava Update for AIX\nhttp://www-933.ibm.com/support/fixcentral/swg/selectFixes?parent=PureSystems&product=ibm/WebSphere/PureApplication+System&release=All&platform=All&function=fixId&fixids=+Java_Update_AIX_2++&includeSupersedes=0 [http://www-933.ibm.com/support/fixcentral/swg/selectFixes?parent=PureSystems&product=ibm/WebSphere/PureApplication+System&release=All&platform=All&function=fixId&fixids=+Java_Update_AIX_2++&includeSupersedes=0]\n\n1. Import the fix into the Emergency Fix catalogue.\n2. For deployed instances, apply this emergency fix on the VM. The IBM Java SDK will be upgraded to IBM Java JDK 7.0 SR8 FP10 interim fix and IBM Java JDK 6.0 SR16 FP3 interim fix\n3. Restart the deployed instance after the fix is applied."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "To resolve the AC power supply failures on your DataPower 9235 appliance, follow these steps:\n\n1. **Check the LED status on the power supplies**: If the LEDs are green, the power supplies are working normally.\n\n2. **Perform a reboot of the appliance**:\n   - **From the WebGUI**:\n     - Control Panel \u2192 System Control \u2192 In the \u201cShutdown\u201d section choose \u201cReboot System\u201d then click \u201cShutdown\u201d\n   - **From the CLI**:\n     - top\n     - shutdown reboot\n     - y\n\nThis problem is caused by a highly intermittent error that may allow the sensor reading mechanism to get into a bad state. This bad state then generates the false error messages. In most cases, a reboot of the appliance will reset the sensors and no additional errors are logged. The highly intermittent error rarely occurs again on the same appliance.\n\nIf the issue reoccurs on the same appliance, contact IBM DataPower support [http://www.ibm.com/support/docview.wss?uid=swg21236322] with the following information:\n\n1. How many times have you seen the issue on the same appliance?\n2. Gather the outputs for the following CLI commands:\n   - show clock\n   - show version\n   - show ipmi\n   - show sensors-other\n   - config\n   - service show\n   - test hardware\n\nFix packs for DataPower B2B Appliance version 6.0 [http://www-01.ibm.com/support/docview.wss?uid=swg24034956]\nFix packs for DataPower Integration Appliance version 6.0 [http://www-01.ibm.com/support/docview.wss?uid=swg24034957]\nFix packs for DataPower Low Latency Appliance version 6.0 [http://www-01.ibm.com/support/docview.wss?uid=swg24034958]\nFix packs for DataPower Service Gateway version 6.0 [http://www-01.ibm.com/support/docview.wss?uid=swg24034959]\n\nFix is available in 5.0.0.13 and 6.0.0.5.\nFor a list of the latest fix packs available, please see: http://www-01.ibm.com/support/docview.wss?uid=swg21237631 [http://www-01.ibm.com/support/docview.wss?uid=swg21237631]"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "It is caused by runstats, writes an unexpected HIGH2KEY and LOW2KEY statistic values."}
+{"output": "Unfortunately, there is nothing more that can be done if the below recommendations are followed.\nEnhancements have been entered in our system to improve this functionality in the future releases.\n27629 Enhancement - Modify baseline of region OCR verification \n26506 Enhancement: Improvement for the OCR feature of the Image Comparator \n10167 Better OCR \n\nFor information about OCR Tips, open the online Help and search the index for OCR.\n\nFrom the online help:\n\nOCR Tips\n\nThe following tips will help you create OCR regions that test well. For\ninformation on creating OCR regions, see Creating OCR Regions.\n\n\u00b7 To get the best results from an OCR operation - place the region\nrectangle border so that the left side is close to the first character of\nthe text to be recognized. If there's a lot of space there, it doesn't\noperate as well, and sometimes the tool may fail to recognize the text. If\nyou get an OCR error, use the Zoom commands to zoom in on the area, and move\nthe left border closer to the first character. \n\n\u00b7 Fit all the borders of the region as tightly as possible around the\ntext. \n\n\u00b7 When you create an OCR region, it is automatically \"read.\" Check the\nMask/OCR List to make sure all the text appears that you want to be tested,\nand that no extra text is present. Resize or move the region if necessary.\nTo eliminate extraneous marks, you may need to make it smaller. To include\nall the text you want tested, you may need to make it larger. See Moving and\nResizing OCR Regions.\n\n\u00b7 If your region contains white or light colored text, use the Light\ntext option in the OCR Region dialog box. This box automatically opens when\nyou create an OCR region.\n\n\u00b7 If your region contains text on a gray or dark colored background,\nuse the Gray background option in the OCR Region dialog box. This box\nautomatically opens when you create an OCR region.\n\n\u00b7 If the OCR region border accidentally includes some part of a\ngraphic or icon, it may fail to recognize the text within the region. Resize\nthe region so that you don't include part of a graphic.\n\n\u00b7 Smaller fonts are harder to recognize. Larger fonts test better.\nAlso, bold fonts are easier to recognize.\n\n\u00b7 If you have a colored font on a colored background, play with the\noption settings in the OCR Region dialog box to see what works best. The\nimage is converted to black and white before sending it to be recognized.\nYou can check the OCR<number>.BMP in the Windows temp directory to see what\nwas actually produced and to use as a guide in these cases. The number in\nthis file name corresponds to the number listed in the Mask/OCR List. See\nthe note below.\n\n\u00b7 Unless you're depending on and making decisions in script based on\nthe recognized text, it's not necessarily important that all letters of a\ntext string are recognized correctly. It's only important that it be done\nthe same way during recording and playback, so that the results are\naccurate. If you notice any characters not being picked up, it may not be\nmalfunctioning, but may just have a limitation. Chances are it will work\naccurately even if every character is not recognized. \n\n\u00b7 When the OCR engine cannot recognize a character based on its\nsurroundings, it will insert a '\n~' character. Some characters in 8 point MS Sans Serif (default Windows\nfont) are harder to read than others - those with a blocky shape are easier\nthan those with angles. This is due to the DPI resolution at which they're\ncaptured versus what is provided to the recognition engine. The characters\nappear more jagged at the higher DPI if they have curves.\n\n\u00b7 We recommend 150 DPI for the best operation of OCR. This is the\ndefault setting found in the Options dialog box."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The information for the Security Bulletin: Malicious File Download vulnerability in IBM Business Process Manager (BPM) and WebSphere Lombardi Edition (WLE) - CVE-2016-9693 can be found in the provided document. The document contains details about the vulnerability, affected products and versions, remediation steps, and additional references."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "To increase the HTTP Session timeout value for the Workplace application on WebSphere Application Server:\n\n1. Start the WebSphere Administrative Console.\n2. From the navigation menu, click Servers > Application Servers.\n3. Select Server1 from the table, select Web Container, and then click Session Management.\n4. In the Session timeout field, change the value to the same value that was set in the previous step.\n5. For IBM HTTP server, change the timeout value to the value that you specified earlier seconds, but you will need to multiply this value by 60 because this field refers to the number of seconds.\n6. Save your changes.\n7. Re-start your WebSphere Application Server."}
+{"output": "The document does not contain information related to the StateChange value being used by the OMNIbusEventReader being too high or being a date and time in the future, preventing the EventReader from capturing current events."}
+{"output": "Yes, there is a security vulnerability in the IBM WebSphere Application Server shipped with IBM Tivoli Netcool Configuration Manager."}
+{"output": ""}
+{"output": "When should I use conversation sharing in DataPower MQ queue managers?\n\nThere are three use cases to configure Sharing Conversations in DataPower mq-qm object:\n\nCase #1: The negotiated sharing conversations value is 0 - The channel runs in a mode similar to WebSphere MQ V6 and does not use features such as Administrator stop-quiesce, Heartbeating, Read ahead, and Client asynchronous consume. Set a value of 0 or 1 on the Sharing Conversations attribute of the mq-qm object in DataPower to disable sharing conversations regardless of the IBM WebSphere MQ SVRCONN setting.\n\nCase #2: The negotiated sharing conversations value is 1 - The channel supports IBM WebSphere MQ V7 and later release features as outlined in case #1, but each TCP/IP channel instance has a single conversation. Set a value of 1 on the Sharing Conversations attribute and select \"on\" in Share Single Conversation attribute of the mq-qm object in DataPower as shown in the following picture and a value of 1 on IBM WebSphere MQ SVRCONN setting.\n\nCase #3: The negotiated sharing conversations value is 2 or more - The channel supports IBM WebSphere MQ 7 and later release features and each TCP/IP channel instance supports 2 or more conversations. Set a value of 2 or more on the Sharing Conversations attribute of the mq-qm object in DataPower and on the MQ SVRCONN channel.\n\nAre there any special values on DataPower when configuring conversation sharing?\n\nThe default setting of sharing conversations (SHARECNV) value is zero in DataPower mq-qm object. The same default value for MQ SVRCONN channel is 10. The sharing conversations value is negotiated between MQ server and DataPower and the lower value takes effect. However, in current versions of the DataPower firmware, the sharing conversations setting of 1 is treated as 0 when negotiating with MQ server."}
+{"output": ""}
+{"output": ""}
+{"output": "How do I recreate all the Oracle Text indexes for the Atlas database?\n\nThere are situations where the Oracle Text indexes used by the application may need to be recreated. For example, after importing data from a production database to a test database, the Oracle Text indexes will not be transferred. This will require you to recreate them in order for certain functions in Atlas to work properly.\n\nIf you have access to the Atlas release files from the version you are currently using you can follow these instructions. You will need the ability to access the Atlas database using the Oracle SQL Plus tool.\n\n1. Shutdown the application server running the Atlas applications.\n2. Locate the script drop_ctxsys_indexes.sql to drop the Oracle Text indexes from the following folder in the Atlas release:\n   Atlas\\Schema\\Deploy\\smf\\db\\etc\\oracle\n3. Open up a command window to that directory and execute the script using SQL Plus:\n   sqlplus <user>/<password>@<database> @drop_ctxsys_indexes.sql\n4. Locate the scripts, setup_ctxsys_objects.sql and create_ctxsys_indexes.sql, used to create the Oracle Text preferences and indexes from the following folder in the Atlas release. The <version> folder will differ depending on which version you are currently running.\n   Atlas\\Schema\\Deploy\\smf\\db\\release\\<version>\\oracle\\create\\schema\n5. Open up a command window to that directory and execute the scripts using SQL Plus.\n   sqlplus <user>/<password>@<database> @setup_ctxsys_objects.sql\n   sqlplus <user>/<password>@<database> @create_ctxsys_indexes.sql\n6. Start the application server running the Atlas applications."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Error: \"MBEANSTARTER LOADEXTENSIONS FAILED TO LOAD EXTENSION\" occurs at portal startup\nWe are using Portal Server 8.5 and when starting the Portal server we see following error:\n\n0000005e MBeanStarter E com.ibm.wps.scripting.server.MBeanStarter loadExtensions failed to load extension: key: ServerExt.applications / value: com.ibm.wps.scripting.server.ApplicationServerExtensions\n\nHow can we resolve this error?\n\n**Answer:**\n\n1) Open the WAS admin console.\n2) Navigate to Resources > Resource environment providers > WP ScriptingService > Custom properties.\n3) You should see an entry with the name \"ServerExt.applications\" and value \"com.ibm.wps.scripting.server.ApplicationServerExtensions\"\n4) Delete this entry, save, and restart the server."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "WebSphere eXtreme Scale and the SDK are leap year and leap second compliant. IBM Java (SDK/JDK) has been doing leap year and leap second testing/verification since 1996, including the non-leap year 2000 without a problem. Leap years and leap seconds in Java are explicitly supported by the public class GregorianCalendar class. This Java class is tested in every release of Java as is part of Java's core functionality. Any Java code that uses the GregorianCalendar class will calculate and determine if a year is a leap year or not. WebSphere eXtreme Scale does not perform explicit testing for leap year and leap second compliance since it runs on top of the Java SDK which already provides this verification for us. We are not aware of any issues in the past with WebSphere eXtreme Scale associated with leap year or leap second."}
+{"output": "WebSphere eXtreme Scale and the SDK are leap year and leap second compliant. IBM Java (SDK/JDK) has been doing leap year and leap second testing/verification since 1996, including the non-leap year 2000 without a problem. Leap years and leap seconds in Java are explicitly supported by the public class GregorianCalendar class. This Java class is tested in every release of Java as is part of Java's core functionality. Any Java code that uses the GregorianCalendar class will calculate and determine if a year is a leap year or not. WebSphere eXtreme Scale does not perform explicit testing for leap year and leap second compliance since it runs on top of the Java SDK which already provides this verification for us. We are not aware of any issues in the past with WebSphere eXtreme Scale associated with leap year or leap second."}
+{"output": ""}
+{"output": ""}
+{"output": "The information you are looking for regarding the Security Bulletin: Vulnerabilities in OpenSSL affecting WebSphere MQ 5.3 and MQ 8 for HPE NonStop Server (CVE-2017-3735) is not provided in the given context. Please refer to the IBM Security Bulletin or the IBM Secure Engineering Web Portal for detailed information on this specific vulnerability."}
+{"output": "The document provided does not contain information regarding \"Security Bulletin: Security Vulnerability in IBM PureApplication System (CVE-2015-1920).\""}
+{"output": ""}
+{"output": "The information you are looking for regarding \"Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect IBM Integration Bus and WebSphere Message Broker\" related to CVE-2017-10115, CVE-2017-10116, CVE-2017-10109, and CVE-2017-10108 is not provided in the given context. Please refer to the latest security bulletins or contact IBM support for the most up-to-date information."}
+{"output": "The attached Support's guide to the SNMP probe provides details on how best to configure the probe, troubleshoot issues and how to use third party products to test the probes behaviour.\n\nSNMP_MTTRAPDProbe_SupportsGuide_22.pdf [/support/docview.wss?uid=swg21607690&aid=2]SNMP_MTTRAPDProbe_SupportsGuide_22.pdf [/support/docview.wss?uid=swg21607690&aid=1]"}
+{"output": "The error \"CWSXM0100E: Multiple replies have been produced for a single request flow in module\" occurs when a mediation primitive is wired more than once to the next mediation primitive. It might seem to be a single wire. However, upon closer inspection, more than one wire exists."}
+{"output": ""}
+{"output": "The MQ_Silent_Uninstall.txt does contain this line: License Agreement=I agree to use the software only in accordance with the installed license."}
+{"output": "The information you are looking for regarding the Security Bulletin: Multiple Vulnerabilities identified in IBM\u00ae Java SDK affect WebSphere Service Registry and Repository, in particular CVE-2017-10115, is not provided in the given context. Please refer to the appropriate IBM Security Bulletin or related documentation for details on this specific vulnerability."}
+{"output": "Question: Is there a support's guide to the CORBA Probes?\nAnswer: Yes, there is a support's guide to the CORBA Probes.\n\nQuestion: Where can I download the support's guide to the IBM CORBA probes?\nAnswer: You can download the support's guide to the IBM CORBA probes from the following link: [http://www-01.ibm.com/support/docview.wss?uid=swg21614208]"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Yes, this is a known problem. The error description states: \"module cannot be opened in exclusive edit mode\" and \"module opens with error message 'No such file or directory' for a session file.\""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The context provided does not contain any information related to the error 1152: Error extracting modelerClient64.msi to the temporary location while installing the SPSS Modeler trial version. Therefore, no relevant sentences can be extracted from the context to answer the question."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Error TASK001X while upgrading Portal 8.0.0.1 to 8.0.0.1 CF14 during import-nodes sub-task\nWhile attempting to upgrade Portal to CF14 the upgrade fails during the import-nodes sub-task.\n\nThe ConfigTrace.log shows the following...\n\nimport-nodes:\n\n--- Exception Thrown --- C:\\Portal8\\PortalServer\\jcr\\wp.content.repository.install\\config\\include s\\jcr.install_cfg.xml:826: com.ibm.icm.jcr.task.TaskException: TASK001X: Remote task execution failed with response code 404 due to exception : Not Found . Please check the server log for more information."}
+{"output": "The context does not provide specific information on how to change the maximum string length for properties in FileNet Administration Console for Content Engine (ACCE). It only discusses issues and solutions related to changing the maximum string length in IBM FileNet Enterprise Manager."}
+{"output": ""}
+{"output": "Second, a modification is done to the SYSTEM.ADMIN.QMGR.EVENT queue to indicate that the default persistence is enabled, and thus, subsequent events from the stop/start of the queue manager will be kept in the queue.\nalter ql(SYSTEM.ADMIN.QMGR.EVENT) defpsist(YES)"}
+{"output": ""}
+{"output": "Workplace XT created search templates are also supported in ICN with the restriction that the search template cannot be edited in ICN.\n\nPlease also note that ICN can only create native search templates, but not stored searches."}
+{"output": ""}
+{"output": "When should I use conversation sharing in DataPower MQ queue managers?\n- Case #1: Set a value of 0 or 1 on the Sharing Conversations attribute of the mq-qm object in DataPower to disable sharing conversations regardless of the IBM WebSphere MQ SVRCONN setting.\n- Case #2: Set a value of 1 on the Sharing Conversations attribute and select \"on\" in Share Single Conversation attribute of the mq-qm object in DataPower as shown in the following picture and a value of 1 on IBM WebSphere MQ SVRCONN setting.\n- Case #3: Set a value of 2 or more on the Sharing Conversations attribute of the mq-qm object in DataPower and on the MQ SVRCONN channel.\n\nMQ version 7.0 introduced a new feature, conversation sharing. Are there any special values on DataPower when configuring conversation sharing?\n- The default setting of sharing conversations (SHARECNV) value is zero in DataPower mq-qm object.\n- The sharing conversations setting of 1 is treated as 0 when negotiating with MQ server in current versions of the DataPower firmware.\n- For values greater than 1, the \"Share Single Conversation\" attribute is hidden in the mq-qm object."}
+{"output": "The document does not contain any information about an error message 1311 when attempting to install SPSS 23 on Windows 10."}
+{"output": ""}
+{"output": "The MQ pattern showing installed MQ version as 8.0.0.2 instead of 8.0.0.4 when the client tries to deploy the pattern at the MQ 8.0.0.4 version in PureApplication System is due to an interface change in IBM Pure Application System 2.1.2.0, and in 2.2.0.0 and greater. This change caused the installation and upgrade of IBM MQ at the latest maintenance level contained in the pattern-type to fail. The installation appeared to succeed, but IBM MQ 8.0.0.2 was installed, and the subsequent fixpack update was not applied. For IBM Pure Application System 2.1.2.0, 2.2.0.0 and later, only IBM MQ 8.0.0.2 could be successfully installed. It was not possible to install later versions, such as 8.0.0.4, or to apply maintenance to running pattern instances."}
+{"output": ""}
+{"output": "The information you are looking for regarding \"Security Bulletin: TLS padding vulnerability affects IBM PureApplication System (CVE-2014-8730)\" is not provided in the given context. The context only mentions vulnerabilities affecting IBM Data Server Client packages and IBM WebSphere Commerce."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "To set HttpOnly and secure flag in Oracle Weblogic 12c to secure IBM Atlas, perform the following steps:\n\n1. Undeploy any existing PolicyAtlas deployments using Oracle Weblogic console.\n2. Open the PolicyAtlas.ear file using a tool like 7zip or similar and update weblogic.xml file with the changes below:\n\n```xml\n<wls:session-descriptor>\n<wls:cookie-secure>true</wls:cookie-secure>\n<wls:cookie-http-only>true</wls:cookie-http-only>\n<wls:url-rewriting-enabled>false</wls:url-rewriting-enabled>\n</wls:session-descriptor>\n```\n\n3. Save the changes by updating the ear file.\n4. Redeploy the updated ear file using Oracle Weblogic console."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Yes, you can hide the left menu pane for a specific application.\n\nIs it possible to disable the left navigation pane menu for certain application?\n\nYes, it is possible to disable the left navigation pane menu for a certain application."}
+{"output": "The following exception is seen in the WebSphere SystemOut.log  \njava.io.NotSerializableException:  \ncom.ibm.sr.ui.beans.PrincipalDetail"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "To troubleshoot the installation failure of TCR 2.1.1 FixPack 2 with the error message \"ACUOSI0050E External command action failed with return code 1,\" you can follow these steps:\n\n1. **Check the Log File**: Look at the file `IBM_Tivoli_Common_Reporting_2.1_1_FP2.log` for additional details about the failure.\n\n2. **Review Installation Scripts**: Check the `TCRComponent/logs` directory for all the STDOUT and STDERR streams of the installation scripts, including the failing `copyEAR.sh`. Specifically, look into `tcr211_Embedded_FP2_run_cognos_copy_ear_update.err` to understand the cause of the failure.\n\n3. **Permission Issues**: If you find a message like:\n   ```\n   BUILD FAILED \n   /opt/IBM/tivoli/tipv2Components/TCRComponent/cognos/temp/build.xml:298: Failed to copy \n   /opt/IBM/tivoli/tipv2Components/TCRComponent/cognos/webcontent/tivoli/ITM/images/newWindow_16.gif to \n   /opt/IBM/tivoli/tipv2/profiles/TIPProfile/installedApps/TIPCell/IBM Cognos 8.ear/p2pd.war/tivoli/ITM/images/newWindow_16.gif due to java.io.FileNotFoundException \n   /opt/IBM/tivoli/tipv2/profiles/TIPProfile/installedApps/TIPCell/IBM Cognos 8.ear/p2pd.war/tivoli/ITM/images/newWindow_16.gif (Permission denied) and I couldn't delete the corrupt\n   /opt/IBM/tivoli/tipv2/profiles/TIPProfile/installedApps/TIPCell/IBM Cognos 8.ear/p2pd.war/tivoli/ITM/images/newWindow_16.gif\n   ```\n   This indicates a lack of permission for the user account used to run the installation on the directory tree involved in the operation.\n\n4. **Resolve Permission Issues**: If it is expected to run the Fixpack installation with a non-root user, double-check the permission bits for the involved directory tree and temporarily set them to give write authorization to the user account installing the FixPack. Then, rerun the installation program."}
+{"output": "Security Bulletin: A vulnerability in IBM Java Runtime affects IBM WebSphere MQ (CVE-2016-3485)\nhttp://www.ibm.com/support/docview.wss?uid=swg22001630 [http://www.ibm.com/support/docview.wss?uid=swg22001630]"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The additional platform requirements when installing IBM Rational Functional Tester (RFT) 8.1.5.3 on Red Hat Enterprise Linux (RHEL) 6.5 include the following libraries:\n\n* libstdc++.so.5\n* libXp.so.6\n* gtk2.i686\n* gtk2-engines.i686\n* PackageKit-gtk-module.i686\n* PackageKit-gtk-module.x86_64\n* libcanberra-gtk2.x86_64\n* libcanberra-gtk2.i686\n\nThese libraries may already be installed on some machines where other software has been installed which uses those libraries. To install these libraries, login as root and run the following command:\n\n* yum install libstdc++.so.5 libXp.so.6 gtk2.i686 gtk2-engines.i686 PackageKit-gtk-module.i686 PackageKit-gtk-module.x86_64 libcanberra-gtk2.x86_64 libcanberra-gtk2.i686\n\nThis command may be run before or after the installation of IBM Rational Functional Tester, as they are not required at installation time, however without these libraries it may not be possible to start IBM Rational Functional Tester."}
+{"output": ""}
+{"output": ""}
+{"output": "The document does not provide information on the IBM Support Assistant data collector for BPM or how to obtain standard information to debug an IBM Business Process Manager environment."}
+{"output": "The context does not provide specific information about the format for copybooks specifically to be used in WTX or any details about errors/fields missing in the typetree while importing COBOL copybooks. It only mentions that \"If your copybooks start on a different column this can be configured when importing the copybook to RIT.\" Therefore, based on the provided context, there is no specific format mentioned for copybooks to be used in WTX."}
+{"output": "To clear errors found in crm_mon, you can use the crm_resource command to clear a failed resource. The syntax is as follows:\n\n* #crm_resource -r <the-failed-resource> -C -H <hostname>\n\nFor example:\n\n#crm_mon\n\nFailed actions:\nfencing_route_to_ha1_start_0 (node=pronetz06, call=17, rc=1): Error\n\nTo clear the failed action (fencing_route_to_ha1_start_0 in the above example), run the following command once the problem has been resolved:\n* #crm_resource -r fencing_route_to_ha1 -C -H pronetz06\n\nNext, run crm_mon once more to confirm the error has been cleared."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "You can find the details regarding the Security Bulletin: IBM WebSphere MQ Administration command could cause denial of service (CVE-2016-8971) at the following URL:\n\n[Security Bulletin: IBM WebSphere MQ Administration command could cause denial of service (CVE-2016-8971)]\nhttp://www.ibm.com/support/docview.wss?uid=swg21998663 [http://www.ibm.com/support/docview.wss?uid=swg21998663]"}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The RDz TSO Send command will invoke a TSO exit, IKJEESX0 (FEKEESX0) that will terminate with a reason code of 4 if you have not coded a facility class for the FEK.CMD.SEND and FEK.CMD.SEND.CLEAR."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Crash happened due to \"PI50993:Apache HTTPComponents vulnerabilities in WebSphere Application Server (CVE-2012-6153, CVE-2014-3577)\""}
+{"output": ""}
+{"output": "The reason for the error is:\n\nIf operating system and database codepage both are UTF-8, but the data to be inserted is not Unicode, then data in the database might have incorrect codepoints (not-Unicode)."}
+{"output": "To check the health of your IBM PureApplication System, you can use the System Health Check report available in firmware versions 2.1.0.1 or newer. Navigate to **System > System Troubleshooting** and click on **System Health Check**. This provides a consolidated view of some of the PureApplication System UI pages.\n\nAdditionally, you can perform Lite Health Checks every couple of days, which take about 15 minutes, and Full Health Checks every week. These checks include verifying the High Availability Status, reviewing Problems, Events, Compute Nodes, Management Nodes, Job Queue, and Failed Deployments. You will need System and Workload administration access to perform these checks.\n\nIf the information displayed is not as expected, expand all sections of the web page and copy the page to a word processing document. Proceed to the **Contacting IBM Support and sending in your information** section of this document."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Can you enable the reporter feature with IBM Rational Rhapsody Architect Software Floating license?\n\nThe license for ReporterPLUS is valid in this case, when the installed version of ReporterPLUS was released before February 28, 2009."}
+{"output": "The document does not provide information regarding an ODR OOM issue after upgrading the WAS to v8553. It only mentions a problem with the ODR server not starting after being created on plinux due to an incorrect version of HeapDetect setting, which is addressed in WebSphere Application Server traditional V9.0 Fix Pack 7."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Transient user support has been introduced for SAML TAI starting with Cumulative Fix (CF) #8 for 8.5. Refer to the WebSphere Portal Security blog for more details regarding the business case and implementation details."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "In IBM Content Navigator, when configuring a desktop, the 'Save and Close' and 'Save' buttons may be disabled."}
+{"output": ""}
+{"output": "The method for acquiring the lock code for a product installation varies by the product and operating system.\n\nDesktop/Client Product Installations\n\nWindows operating systems\n(1) Select Start.\n(2) Select 'Programs' (or 'All Programs') menu entry.\n(3) Select the program folder corresponding to the product (example: 'IBM SPSS Statistics')\n(4) Launch the 'License Authorization' program corresponding to the product version (example: 'IBM SPSS Statistics 24 License Authorization Wizard')\n(5) Select the 'Next' button.\n(6) In the lower left section of this window will appear 'Lock Code for this machine is'. Note the indicated lock code.\n(7) Select the 'Cancel button'.\n(8) Select the 'Yes' button. The License Authorization program will close.\n\nMacOS operating systems\n(1) Open Finder.\n(2) Select 'Go' menu.\n(3) Select 'Applications' entry.\n(4) Select 'IBM' icon.\n(5) Select 'SPSS' folder icon.\n(6) Select folder icon corresponding to the product (example: 'Statistics')\n(7) Select the folder corresponding to the product version (example: '24').\n(8) Launch 'License Authorization Wizard' program.\n(9) Select the 'License my product now' option.\n(10) Select 'Next'.\n(11) In the lower left section of this window will appear 'Lock Code for this machine is'. Note the indicated lock code.\n(12) Select the 'Cancel button'.\n(13) Select the 'Yes' button. The License Authorization program will close."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Why I am not able to login to StoredIQ Dataserver and Getway using ssh? \n\nCAUSE\nRestriction in remote login using ssh"}
+{"output": ""}
+{"output": ""}
+{"output": "The JBoss service is not available to run as a Windows service when configured with the ITCAM for J2EE agent/DC because this involves changes to the JBoss native connector files and this is currently not supported."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "The provided context does not mention IBM DB2 pureScale or provide information on how to solve hanging threads during the startup of the server and initialization of the internal document store. Therefore, I cannot provide an answer based on the given content."}
+{"output": ""}
+{"output": ""}
+{"output": ""}
+{"output": "Tablespaces migrated from DB2 V9.1/V9.5 to V9.7 won't get upgraded directly to use the reclaimable storage feature."}
+{"output": ""}
+{"output": ""}
+{"output": "The provided context does not contain information about the issue of users being unable to login to Web GUI 8.1 after modifying the timeout to 2147483647 in the security.xml file. Therefore, I cannot provide an answer based on the given content."}
+{"output": ""}
+{"output": "During the upgrade from Cognos BI 10.x.x to Cognos Analytics 11.0.x, the location of images changed for legacy studios. Copying the `<COGNOS_INSTALL>/webcontent/explore` folder to `<COGNOS_INSTALL>/webcontent/bi` will allow the images to be displayed correctly."}
+{"output": ""}
+{"output": "The document does not contain information regarding Security Bulletin: Vulnerabilities in OpenSSL affect WebSphere MQ 5.3 for HP NonStop Server (CVE-2017-3735)."}
+{"output": ""}
+{"output": ""}
